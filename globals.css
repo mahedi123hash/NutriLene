@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --tv-bg: #0A0E1A;
+  --tv-surface: #111827;
+  --tv-card: #161D2E;
+  --tv-border: #1E2A3D;
+  --tv-accent: #6366F1;
+  --tv-accent2: #8B5CF6;
+  --tv-cyan: #06B6D4;
+  --tv-green: #10B981;
+  --tv-text: #F1F5F9;
+  --tv-muted: #94A3B8;
+  --tv-dim: #475569;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--tv-bg);
+  color: var(--tv-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--tv-border); border-radius: 4px; }
+
+.ad-placeholder {
+  background: var(--tv-surface);
+  border: 1px dashed var(--tv-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--tv-dim);
+  font-size: 12px;
+}
